@@ -1,0 +1,28 @@
+document-1.0
+
+1. Name of blog website 
+	monkey.tech.blog
+2. Framework
+	HTML+CSS+JS(AngularJS+jQuery)+PHP(Laravel)+Mysql+Nginx
+3. Tables and Attributes
+	blog management
+		blogId, blogName, createdTime, UpdatedTime, textContent, imageContent, userId, 
+	user management 
+		userId, userName, email, password, photo
+	comment management
+		blogId, commenterId, createdTime, commenteeId
+
+4. Requirements(Functional)
+	create, modify, delete private/public blogs
+	create users(send verifying email for logup/register), update password
+		userName should not be the same with others'
+		email cannot change once created account
+		password can be track and modify through email
+	make comment to a public blog
+		create/delete comment to a blog
+		reply to other's comments
+
+5. Issues 
+	(1) how to save blog including both text and images?
+		solution 1: save image as extra file to filesystem; save text only into mysql;
+	(2) editor within the website used for writing blogs?
